@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./less/common.css">
+    <link rel="stylesheet" href="./less/index.css">
+    <title>慢慢买-首页</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 公共头部和搜索部分 -->
+        <header>
+            <div class="logo fl">
+                <a href="index.html">
+                    <img class="middle" src="./images/header_logo.png" alt="">
+                </a>
+            </div>
+            <div class="app fr">
+                <a href="javascript:;">
+                    <img class="middle" src="./images/header_app.png" alt="">
+                </a>
+            </div>
+        </header>
+        <div class="search">
+            <input autocomplete="off" placeholder="请输入你想比价的商品" class="middle_y search_input" type="search">
+            <button class="middle_y search_btn">搜索</button>
+        </div>
+        <!-- 公共头部和搜索结束 -->
+
+        <!-- 主体menu部分 -->
+        <section class="menu">
+            <ul class="clearfix li_list">
+                <!-- 挖个坑 -->
+            </ul>
+        </section>
+        <!-- 主体menu部分结束 -->
+
+        <!-- 差值折扣推荐 -->
+        <div class="recommen">
+            <span>超值折扣推荐</span>
+            <img class="middle_y" src="./images/more.png" alt="">
+        </div>
+        <div class="recommen_producet">
+            <ul class="product_list">
+                <!-- 挖个坑 -->
+            </ul>
+        </div>
+        <div class="more-info">
+            <!-- <button class="middle_x">更多优惠信息 >></button> -->
+            <a class="middle_x" href="moneyctrl.html">更多优惠信息 >></a>
+        </div>
+        <!-- 差值折扣推荐结束 -->
+        <!-- 品牌排行开始 -->
+        <div class="list-title">
+            <span>品牌排行</span>
+            <img class="middle_y" src="./images/more.png" alt="">
+        </div>
+        <!-- 品牌排行结束 -->
+
+        <footer>
+            <ul class="clearfix">
+                <li class="w30">
+                    <a href="javascript:;">登录</a>
+                </li>
+                <li class="w30">
+                    <a href="javascript:;">注册</a>
+                </li>
+                <li class="w40 last to_top">
+                    <img src="./images/top.jpg" alt="">
+                    <a href="javascript:;">返回顶部</a>
+                </li>
+            </ul>
+            <p class="addr">
+                <a class="phoneApp" href="javascript:;">手机APP下载</a>
+                <a class="phone" href="javascript:;">慢慢买手机版</a>
+                -- 掌上比价平台
+            </p>
+            <p class="url">m.manmanbuy.com</p>
+        </footer>
+
+
+    </div>
+    <script type="text/html" id="tpl">
+        {{each list as v i}}
+        <li class="w25 fl {{v.indexmenuId == 7 ? " more " : " "}}">
+            <a href="{{v.titlehref}}">
+                {{#v.img}}
+            </a>
+            <p>{{v.name}}</p>
+        </li>
+        {{/each}}
+    </script>
+
+    <script type="text/html" id="tpl2">
+        {{each list as v i}}
+        <li>
+            <a class="clearfix" href="#">
+                <div class="pic fl">
+                    {{#v.productImgSm}}
+                </div>
+                <div class="info">
+                    <div class="title txt-cut">
+                        {{v.productName}}
+                        <span>{{v.productPinkage}}</span>
+                    </div>
+                    <div class="other">
+                        <span>京东商城 | {{v.productTime}}</span>
+                        <span class="icon_span">
+                            <i></i>
+                            {{v.comcount}}
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

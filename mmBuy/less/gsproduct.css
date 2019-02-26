@@ -1,0 +1,137 @@
+header .left {
+  width: 2.5rem;
+  height: 100%;
+}
+header .left a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(../images/right.svg) no-repeat center center;
+  background-size: 50%;
+}
+.nav {
+  height: 1.95rem;
+  position: relative;
+}
+.nav .nav_list {
+  width: 85%;
+  height: 100%;
+  line-height: 1.95rem;
+}
+.nav .nav_list .level1_li {
+  height: 100%;
+  font-size: 16px;
+}
+.nav .nav_list .level1_li a {
+  color: #333;
+}
+.nav .nav_list .level1_li a p {
+  text-align: center;
+}
+.nav .nav_list .level1_li a i {
+  font-style: normal;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url(../images/3.svg) no-repeat center;
+  background-size: 200%;
+}
+.nav .c_search {
+  width: 15%;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  top: 0;
+}
+.nav .second_ul_hb,
+.nav .second_ul {
+  font-size: 16px;
+  background: #fff;
+  position: absolute;
+  top: 1.95rem;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 3px 6px #dddddd;
+}
+.nav .second_ul_hb .level2_li,
+.nav .second_ul .level2_li {
+  border-top: 1px solid  #ccc;
+  height: 1.95rem;
+  line-height: 1.95rem;
+  width: 100%;
+  position: relative;
+}
+.nav .second_ul_hb .level2_li a,
+.nav .second_ul .level2_li a {
+  color: #333;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+}
+.nav .second_ul_hb .level2_li.now:after,
+.nav .second_ul .level2_li.now:after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: url(../images/ok.svg) no-repeat center right;
+  background-size: 100%;
+}
+.main {
+  background: #f1f1f1;
+  padding-top: 10px;
+}
+.main ul {
+  padding: 5px;
+}
+.main ul li {
+  width: 49%;
+  margin-right: 2%;
+  float: left;
+  background: #fff;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.main ul li .img_box {
+  width: 100%;
+  height: 8rem;
+}
+.main ul li .img_box img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.main ul li .tips {
+  width: 100%;
+  padding: 0 5px;
+  color: #333;
+  font-size: 12px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.main ul li .other {
+  padding: 0 5px;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 6px;
+}
+.main ul li .other .price {
+  color: #f73d1f;
+  font-size: 18px;
+  font-weight: 600;
+}
+.main ul li .other .btn {
+  width: 3.175rem;
+  height: 100%;
+  background: #ff9501;
+  text-align: center;
+  border-radius: 3px;
+  color: #fff;
+}
+.main ul :nth-child(2n) {
+  margin-right: 0;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./less/common.css">
+    <link rel="stylesheet" href="./less/moneyctrl.css">
+    <link rel="stylesheet" href="./less/inlanddiscount.css">
+    <title>慢慢买-国内折扣</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 公共头部和搜索部分 -->
+        <header>
+            <div class="left fl">
+                <a href="javascript:history.go(-1);"></a>
+            </div>
+            <div class="right fr">
+                <a href="#">
+                    <img class="middle" src="./images/header_app.png" alt="">
+                </a>
+            </div>
+            <div class="center">国内折扣</div>
+        </header>
+        <!-- 公共头部和搜索结束 -->
+
+
+        <div class="main">
+            <ul class="li_list">
+                <!-- 挖个坑 -->
+            </ul>
+        </div>
+
+
+        <footer>
+            <ul class="clearfix">
+                <li class="w30">
+                    <a href="#">登录</a>
+                </li>
+                <li class="w30">
+                    <a href="#">注册</a>
+                </li>
+                <li class="w40 last to_top">
+                    <img src="./images/top.jpg" alt="">
+                    <a href="#">返回顶部</a>
+                </li>
+            </ul>
+            <p class="addr">
+                <a class="phoneApp" href="#">手机APP下载</a>
+                <a class="phone" href="#">慢慢买手机版</a>
+                -- 掌上比价平台
+            </p>
+            <p class="url">m.manmanbuy.com</p>
+        </footer>
+
+
+    </div>
+
+    <script type="text/html" id="tpl">
+        {{each list as v i}}
+        <li class="w50 fl">
+            <a href="discount.html?productid={{v.productId}}">
+                <div data-src={{v.trueImgSrc}} class="img_box">
+                    {{if i < 4}}{{#v.productImg}} {{else}} {{#v.loding}} {{/if}}
+                </div>
+                <div class="title txt-cut">{{v.productName}}</div>
+                <div class="subtit one-txt-cut">{{v.productPrice}}</div>
+                <div class="info one-txt-cut">{{v.productFrom}} | {{v.productTime}}</div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/tools.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./js/inlanddiscount.js"></script>
+</body>
+
+</html>

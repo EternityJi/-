@@ -1,0 +1,68 @@
+header {
+  background: #f4483e;
+}
+header .left {
+  width: 2.5rem;
+  height: 100%;
+}
+header .left a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(../images/right.svg) no-repeat center center;
+  background-size: 50%;
+}
+.pro_content {
+  padding: 10px;
+}
+.pro_content .title {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+.pro_content .coupon_list ul {
+  padding-top: 20px;
+}
+.pro_content .coupon_list ul li {
+  border-bottom: 1px solid #ccc;
+}
+.pro_content .coupon_list ul li .pic {
+  width: 5rem;
+  height: 4rem;
+}
+.pro_content .coupon_list ul li .pic img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.pro_content .coupon_list ul li .ino {
+  overflow: hidden;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #333;
+  position: relative;
+}
+.pro_content .coupon_list ul li .ino .tit {
+  margin-bottom: 1rem;
+  min-height: 3.5rem;
+}
+.pro_content .coupon_list ul li .ino .tit .p1 {
+  margin-bottom: 5px;
+}
+.pro_content .coupon_list ul li .ino .tit .pri {
+  color: #000;
+  font-weight: 800;
+}
+.pro_content .coupon_list ul li .ino .tit .pri img {
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  text-align: center;
+  display: block;
+  float: right;
+}
+.pro_content .coupon_list ul li .ino .time {
+  color: #ed7c14;
+  margin-bottom: 10px;
+  font-size: 12px;
+}

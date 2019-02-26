@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./less/common.css">
+    <link rel="stylesheet" href="./less/moneyctrl.css">
+    <title>慢慢买-首页</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 公共头部和搜索部分 -->
+        <header>
+            <div class="left fl">
+                <a href="javascript:history.go(-1);"></a>
+            </div>
+            <div class="right fr">
+                <a href="#">
+                    <img class="middle" src="./images/header_app.png" alt="">
+                </a>
+            </div>
+            <div class="center">省钱控-最新优惠</div>
+        </header>
+        <!-- 公共头部和搜索结束 -->
+
+
+        <!-- 差值折扣推荐 -->
+        <div class="recommen_producet">
+            <!-- 挖个坑 -->
+        </div>
+        <!-- 差值折扣推荐结束 -->
+
+
+
+        <footer>
+            <ul class="clearfix">
+                <li class="w30">
+                    <a href="#">登录</a>
+                </li>
+                <li class="w30">
+                    <a href="#">注册</a>
+                </li>
+                <li class="w40 last to_top">
+                    <img src="./images/top.jpg" alt="">
+                    <a href="#">返回顶部</a>
+                </li>
+            </ul>
+            <p class="addr">
+                <a class="phoneApp" href="#">手机APP下载</a>
+                <a class="phone" href="#">慢慢买手机版</a>
+                -- 掌上比价平台
+            </p>
+            <p class="url">m.manmanbuy.com</p>
+        </footer>
+
+
+    </div>
+
+    <script type="text/html" id="tpl">
+        <ul class="product_list">
+            {{each result as v i}}
+            <li>
+                <a class="clearfix" href="moneyproduct.html?productid={{v.productId}}">
+                    <div class="pic fl">
+                        {{#v.productImgSm}}
+                    </div>
+                    <div class="info">
+                        <div class="title txt-cut">
+                            {{v.productName}}
+                            <span>{{v.productPinkage}}</span>
+                        </div>
+                        <div class="other">
+                            <span>{{v.productFrom}} | {{v.productTime}}</span>
+                            <span class="icon_span">
+                                <i></i>
+                                {{v.comcount}}
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+        <div class="page clearfix">
+            <a href="moneyctrl.html?pageid={{prev}}" class="prev fl">上一页</a>
+            <select class="fl middle_x select">
+                {{each totalPage as v i}}
+                <option class="option" {{if (i+1)==currentPage }} selected {{/if}} value="{{i}}">{{v}}</option>
+                {{/each}}
+            </select>
+            <a href="moneyctrl.html?pageid={{next}}" class="next fr">下一页</a>
+        </div>
+
+    </script>
+
+    <!-- 分页模版 -->
+
+
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/tools.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./js/moneyctrl.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+body {
+  background: #f1f1f1;
+}
+.menu {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.menu ul li {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.menu ul li img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.menu ul li p {
+  text-align: center;
+  font-size: 0.6rem;
+}
+.recommen {
+  height: 1.75rem;
+  background-color: #ff841d;
+  line-height: 1.75rem;
+  position: relative;
+  padding-left: 0.5rem;
+}
+.recommen span {
+  font-size: 0.8rem;
+  color: #fff;
+  position: relative;
+  top: -2px;
+}
+.recommen img {
+  width: 1rem;
+  height: 1rem;
+  right: 0.5rem;
+}
+.more-info {
+  height: 2.125rem;
+  background-color: #fff;
+  position: relative;
+}
+.more-info a {
+  border: 1px solid #ccc;
+  width: 90%;
+  bottom: 0;
+  text-align: center;
+  background-color: #fff;
+  font-size: 0.7rem;
+  border-radius: 4px;
+  height: 1.625rem;
+  color: #000;
+  line-height: 1.575rem;
+}
+.list-title {
+  height: 1.75rem;
+  background-color: #ff841d;
+  line-height: 1.75rem;
+  position: relative;
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+.list-title span {
+  font-size: 0.8rem;
+  color: #fff;
+  position: relative;
+  top: -2px;
+}
+.list-title img {
+  width: 1rem;
+  height: 1rem;
+  right: 0.5rem;
+}

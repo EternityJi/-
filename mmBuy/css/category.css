@@ -1,0 +1,51 @@
+body {
+  background-color: #fff;
+}
+#category {
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  border-bottom: none;
+}
+#category .item-list {
+  background-color: #ededed;
+  text-indent: 0.95rem;
+  line-height: 2.025rem;
+  font-size: 0.75rem;
+}
+#category .item-list .getCategory {
+  color: #000;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(../images/arrow1.gif) no-repeat right center;
+  border-bottom: 1px solid #ccc;
+}
+#category .item-list ul {
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-top: none;
+  background-color: #f9f9f9;
+}
+#category .item-list ul li {
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  text-indent: 0;
+}
+#category .item-list ul li a {
+  color: #666;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#category .first {
+  border-radius: 10px 10px 0 0;
+}
+#category .item-list.last {
+  border-radius: 0 0 10px 10px;
+}
+#category .item-list.last a {
+  border-bottom: none;
+}

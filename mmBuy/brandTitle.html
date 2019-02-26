@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./less/common.css">
+    <link rel="stylesheet" href="./less/brandTitle.css">
+    <title>慢慢买-品牌大全</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 公共头部和搜索部分 -->
+        <header>
+            <div class="logo fl">
+                <a href="index.html">
+                    <img class="middle" src="./images/header_logo.png" alt="">
+                </a>
+            </div>
+            <div class="app fr">
+                <a href="#">
+                    <img class="middle" src="./images/header_app.png" alt="">
+                </a>
+            </div>
+        </header>
+        <div class="search">
+            <input autocomplete="off" placeholder="请输入你想比价的商品" class="middle_y search_input" type="search">
+            <button class="middle_y search_btn">搜索</button>
+        </div>
+        <!-- 公共头部和搜索结束 -->
+
+        <!--  -->
+
+
+
+        <!-- 导航 -->
+        <nav>
+            <div class="left fl">
+                <!-- 挖个坑 -->
+                <a href="index.html">首页</a>>
+                <a href="category.html">全部分类></a>
+                <!-- <a href="javascript:;">{{result[0].category}}</a>> -->
+            </div>
+        </nav>
+
+        <!-- hot -->
+        <div class="hot">
+            热门品牌排行
+        </div>
+
+        <!-- 中心全部分类模块 -->
+        <section id="category">
+            <div class="row clearfix">
+                <ul>
+                    <!-- 挖个坑 -->
+                </ul>
+            </div>
+        </section>
+        <!-- 中心全部分类模块结束 -->
+
+        <footer>
+            <ul class="clearfix">
+                <li class="w30">
+                    <a href="#">登录</a>
+                </li>
+                <li class="w30">
+                    <a href="#">注册</a>
+                </li>
+                <li class="w40 last to_top">
+                    <img src="./images/top.jpg" alt="">
+                    <a href="#">返回顶部</a>
+                </li>
+            </ul>
+            <p class="addr">
+                <a class="phoneApp" href="#">手机APP下载</a>
+                <a class="phone" href="#">慢慢买手机版</a>
+                -- 掌上比价平台
+            </p>
+            <p class="url">m.manmanbuy.com</p>
+        </footer>
+    </div>
+
+    <script type="text/html" id="tpl">
+        {{each list as v i}}
+        <li class="item-list {{v.brandTitleId == 0 ? " first " : v.brandTitleId == list.length-1 ? "last " : " "}}">
+            <a class="getCategory" href="brand.html?brandtitleid={{v.brandTitleId}}">{{v.brandTitle}}</a>
+        </li>
+        {{/each}}
+    </script>
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./js/brandTitle.js"></script>
+</body>
+
+</html>
